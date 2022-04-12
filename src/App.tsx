@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContainerFooter, ContainerHeader, QuotesGrid } from './components';
+import { ContainerFooter, ContainerHeader, QAOverview } from './components';
 
 const App: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const App: React.FC = () => {
         <ContainerHeader />
       </header>
       <main>
-        <QuotesGrid />
+        <QAOverview />
       </main>
       <footer>
         <ContainerFooter />

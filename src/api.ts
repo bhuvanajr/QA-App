@@ -1,7 +1,7 @@
-import quotes from './quotes.json';
-import { Quotes } from './types/quote';
+import sampleQA from './qnaSampleData.json';
+import { QAType } from './types/QAType';
 
-export const getQuotes = () => {
-  let quotesR: Quotes[] = quotes;
-  return quotesR;
+export const getQnA = () => {
+  let qaData: QAType[] = sampleQA;
+  return qaData;
 };

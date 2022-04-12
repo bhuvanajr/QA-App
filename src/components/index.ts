@@ -1,2 +1,2 @@
 export * from './Application';
-export * from './QuotesOverview';
+export * from './QATool';
