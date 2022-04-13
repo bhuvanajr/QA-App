@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import { QAType } from '../types/QAType';
+import { QAType } from '../../types/QAType';
 import { getSortedItems } from './methods/getSortedItems';
 import { requestSort } from './methods/requestSort';
 

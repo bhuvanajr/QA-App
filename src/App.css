@@ -107,7 +107,7 @@ footer {
 }
 
 tr th.text-primary {
-  color: #29cc96 !important;
+  color: #596f44 !important;
 }
 
 thead tr th {
@@ -119,7 +119,7 @@ main {
 }
 .ascending:before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0dd';
+  content: '\f15d';
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
@@ -127,13 +127,14 @@ main {
 }
 .descending:before {
   font-family: 'Font Awesome 6 Free';
-  content: '\f0de';
+  content: '\f15e';
   display: inline-block;
   padding-right: 3px;
   vertical-align: middle;
   font-weight: 900;
 }
 .icon {
+  padding-left: 3%;
   color: gray;
   width: 1em;
 }
@@ -142,4 +143,8 @@ main {
   padding: 0;
   background: transparent;
   font-weight: 600;
+}
+
+.details {
+  background-color: #ffffff;
 }
