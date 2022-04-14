@@ -1,5 +1,5 @@
 import React from 'react';
-import { QAType } from '../../types/QAType';
+import { QAType } from '../../../types/QAType';
 import { ContextAwareToggle } from './ContextAwareToggle';
 
 type Props = {

@@ -1,29 +1,33 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { getQnA } from './api';
 import { QAType } from '../../types/QAType';
+import { submitNewQA } from './methods';
+
+export type QAOverviewContextState = {
+  questionAnswerList?: QAType[];
+  isQALoading: boolean;
+};
 
 type QAOverviewContextType = {
-  methods: {};
-  state: { questionAnswerList?: QAType[] };
+  methods: { submitNewQA: (data: QAType, delay: boolean) => void };
+  state: QAOverviewContextState;
 };
 
 export const QAOverviewContext = createContext<QAOverviewContextType | undefined>(undefined);
 
 export const QAOverviewProvider: React.FC = props => {
-  const [questionAnswerList, setQuestionAnswerList] = useState<QAType[]>();
+  const [qaState, setQAState] = useState<QAOverviewContextState>({ questionAnswerList: undefined, isQALoading: false });
 
   useEffect(() => {
     const data = getQnA();
-    if (data) setQuestionAnswerList(data!);
+    if (data) setQAState(s => ({ ...s, questionAnswerList: data! }));
   }, []);
 
   return (
     <QAOverviewContext.Provider
       value={{
-        methods: {},
-        state: {
-          questionAnswerList: questionAnswerList,
-        },
+        methods: { submitNewQA: (data, delay) => submitNewQA(data, delay, setQAState, qaState) },
+        state: qaState,
       }}
     >
       {props.children}

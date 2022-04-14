@@ -7,7 +7,7 @@ const App: React.FC = () => {
       <header>
         <ContainerHeader />
       </header>
-      <main>
+      <main className="container">
         <QAOverview />
       </main>
       <footer>
