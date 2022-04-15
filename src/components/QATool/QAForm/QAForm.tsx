@@ -29,7 +29,9 @@ export const QAForm: React.FC = () => {
   return (
     <FormProvider {...formMethods}>
       <form onSubmit={formMethods.handleSubmit(onSubmit)}>
-        <h2>Create a new question</h2>
+        <div data-tooltip="Create a new question and answer here">
+          <h2>Create a new question</h2>
+        </div>
         <QuestionInput />
         <AnswerInput />
         <DelayInput />
