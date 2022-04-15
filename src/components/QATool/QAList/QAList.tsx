@@ -10,6 +10,7 @@ export const QAList = () => {
   } = useSortContext();
   const {
     state: { isQALoading },
+    methods: { resetQA },
   } = useQAOverviewContext();
 
   const getClassNamesFor = name => {
@@ -21,12 +22,16 @@ export const QAList = () => {
 
   return (
     <div className="mb-5 col-lg-10">
-      <h2>
-        Questions and Answers
-        <button type="button" className="table-sort" onClick={() => requestSort('solution')}>
-          {getClassNamesFor('solution') && <div className={`icon ${getClassNamesFor('solution')}`} />}
+      <div className="d-flex align-items-center mb-6">
+        <h2>Questions and Answers</h2>
+        <button type="button" className="btn-icon" onClick={() => requestSort('question')}>
+          {getClassNamesFor('question') && <div className={`icon ${getClassNamesFor('question')}`} />}
         </button>
-      </h2>
+        <button type="button" className="btn-icon" onClick={() => resetQA()}>
+          <div className="icon icon-delete" />
+        </button>
+      </div>
+
       <Accordion>
         <div className="table-responsive rounded">
           <table className="table mb-0">

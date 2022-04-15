@@ -7,11 +7,13 @@ export const submitNewQA = async (
   setState: React.Dispatch<React.SetStateAction<QAOverviewContextState>>,
   state: QAOverviewContextState
 ) => {
-  if (delay) {
-    setState({ ...state, isQALoading: true });
-    setInterval(
-      () => setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data], isQALoading: false }),
-      10000
-    );
-  } else setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data] });
+  if (state.questionAnswerList) {
+    if (delay) {
+      setState({ ...state, isQALoading: true });
+      setInterval(
+        () => setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data], isQALoading: false }),
+        10000
+      );
+    } else setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data] });
+  } else setState({ ...state, questionAnswerList: [data!] });
 };

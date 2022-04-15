@@ -1,4 +1,5 @@
 import React from 'react';
+import { Anchor } from 'react-bootstrap';
 import { QAType } from '../../../types/QAType';
 import { ContextAwareToggle } from './ContextAwareToggle';
 
@@ -13,11 +14,9 @@ export const QAGridRow: React.FC<Props> = ({ data, id }) => {
   return (
     <>
       <td className="col-lg-1">
-        <input
-          type="checkbox"
-          value={data.qaId}
-          //{...register('qa.' + id)}
-        />
+        <Anchor>
+          <span className="icon icon-edit"></span>
+        </Anchor>
       </td>
       <th scope="row" className="text-primary text-break">
         {data.question}

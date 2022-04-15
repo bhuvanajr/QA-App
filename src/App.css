@@ -130,7 +130,7 @@ main {
   padding-left: 20%;
   vertical-align: middle;
   font-weight: 900;
-  color: gray;
+  color: var(--qa-green);
 }
 .descending:before {
   font-family: 'Font Awesome 6 Free';
@@ -139,7 +139,7 @@ main {
   padding-left: 20%;
   vertical-align: middle;
   font-weight: 900;
-  color: gray;
+  color: var(--qa-green);
 }
 .icon-alert:before {
   font-family: 'Font Awesome 6 Free';
@@ -150,10 +150,28 @@ main {
   color: #dc3545;
   padding-left: 1%;
 }
+.icon-edit:before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f304';
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  color: var(--qa-green);
+  padding-left: 30%;
+}
+.icon-delete:before {
+  font-family: 'Font Awesome 6 Free';
+  content: '\f1f8';
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 900;
+  color: var(--qa-green);
+  padding-left: 30%;
+}
 .icon {
   width: 1em;
 }
-.table-sort {
+.btn-icon {
   border: 0;
   padding: 0;
   background: transparent;
@@ -184,4 +202,13 @@ input[type='checkbox'] {
   background-color: #ffde76;
   transition: 0.7s;
   border: none;
+}
+
+button.accordion-button {
+  padding: 0;
+}
+@media (max-width: 480px) {
+  footer {
+    text-align: center;
+  }
 }

@@ -5,7 +5,7 @@ import { QAForm } from './QAForm';
 import { QAList } from './QAList';
 
 export const QAOverview = () => {
-  const initialConfig = { key: 'solution', direction: 'ascending' };
+  const initialConfig = { key: 'question', direction: 'ascending' };
 
   return (
     <SortProvider initalConfig={initialConfig}>
