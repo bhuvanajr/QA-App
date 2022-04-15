@@ -1,7 +1,12 @@
 import React from 'react';
+import { QAType } from '../../../types/QAType';
 import { TextInput } from '../../_shared';
 
-export const AnswerInput = () => {
+type Props = {
+  defaultQA?: QAType;
+};
+
+export const AnswerInput: React.FC<Props> = ({ defaultQA }) => {
   return (
     <div className="form-group row">
       <label htmlFor="question" className="col-lg-8 col-form-label">
@@ -16,6 +21,7 @@ export const AnswerInput = () => {
             required: "'Answer' is a required field",
           }}
           autoComplete="off"
+          defaultValue={defaultQA?.answer ?? ''}
         />
       </div>
     </div>

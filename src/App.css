@@ -240,13 +240,19 @@ button.accordion-button {
 [data-tooltip]:not([data-tooltip-persistent]):before {
   pointer-events: none;
 }
-/* below code is not working */
-.accordion-button:not {
-  color: var(--qa-green);
-  background-color: none;
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #ffffff;
+  box-shadow: none;
 }
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .accordion-button:focus {
-  color: var(--qa-green);
-  background-color: none;
-  border-color: #b1de87;
+  z-index: 3;
+  border-color: none;
+  outline: none;
+  box-shadow: none;
 }
