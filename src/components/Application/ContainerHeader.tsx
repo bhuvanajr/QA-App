@@ -7,6 +7,7 @@ export const ContainerHeader = () => {
         <a href="/">
           <img src="/assets/qa_logo.png" alt="Brand logo" className="brand-image" />
         </a>
+        QA Tool
       </div>
     </div>
   );

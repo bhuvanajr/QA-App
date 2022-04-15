@@ -10,7 +10,7 @@ export const QAForm: React.FC = () => {
     formState: { isSubmitSuccessful },
     reset,
   } = formMethods;
-  const [delay, setDelay] = useState();
+  const [delay] = useState();
   const {
     methods: { submitNewQA },
   } = useQAOverviewContext();

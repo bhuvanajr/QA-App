@@ -1,7 +1,7 @@
 import { QAType } from '../../../types/QAType';
 import { QAOverviewContextState } from '../QAOverviewProvider';
 
-export const submitNewQA = (
+export const submitNewQA = async (
   data: QAType,
   delay: boolean,
   setState: React.Dispatch<React.SetStateAction<QAOverviewContextState>>,
@@ -9,11 +9,9 @@ export const submitNewQA = (
 ) => {
   if (delay) {
     setState({ ...state, isQALoading: true });
-    const timer = setTimeout(
+    setInterval(
       () => setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data], isQALoading: false }),
-      1000
+      10000
     );
-    clearTimeout(timer);
-  }
-  setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data] });
+  } else setState({ ...state, questionAnswerList: [...state.questionAnswerList!, data] });
 };

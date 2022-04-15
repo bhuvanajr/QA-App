@@ -17,8 +17,8 @@ export const ContainerFooter: React.FC = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://www.energiebespaarders.nl/" target="_blank" rel="noreferrer">
-                <div data-label="footer.copyright">© DEB</div>
+              <a className="nav-link" href="#" target="_blank" rel="noreferrer">
+                <div data-label="footer.copyright">© QA Tool</div>
               </a>
             </li>
           </ul>

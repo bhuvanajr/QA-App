@@ -19,7 +19,7 @@ export const QAGridRow: React.FC<Props> = ({ data, id }) => {
           //{...register('qa.' + id)}
         />
       </td>
-      <th scope="row" className="text-primary">
+      <th scope="row" className="text-primary text-break">
         {data.question}
       </th>
       <ContextAwareToggle eventKey={`accordionKey-${id}`} />

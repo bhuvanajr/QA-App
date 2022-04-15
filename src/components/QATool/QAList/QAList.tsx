@@ -8,7 +8,9 @@ export const QAList = () => {
     methods: { requestSort },
     state: { sortConfig },
   } = useSortContext();
-  const { state: isQALoading } = useQAOverviewContext();
+  const {
+    state: { isQALoading },
+  } = useQAOverviewContext();
 
   const getClassNamesFor = name => {
     if (!sortConfig) {
@@ -18,7 +20,7 @@ export const QAList = () => {
   };
 
   return (
-    <div className="rounded mb-5">
+    <div className="mb-5 col-lg-10">
       <h2>
         Questions and Answers
         <button type="button" className="table-sort" onClick={() => requestSort('solution')}>
@@ -34,7 +36,7 @@ export const QAList = () => {
       </Accordion>
       {isQALoading && (
         <div className="spinner-border spinner-border-sm" role="status">
-          <span className="sr-only">Loading...</span>
+          <span className="visually-hidden">Loading...</span>
         </div>
       )}
     </div>

@@ -16,7 +16,7 @@ export const QAGridBodyCollapse: React.FC<Props> = ({ row, index }) => {
             <div className="row no-gutters">
               <div className="col-lg-11">
                 <dl className="row no-gutters text-dark">
-                  <dd className="col-12">{row.answer}</dd>
+                  <dd className="col-12 text-break">{row.answer}</dd>
                 </dl>
               </div>
             </div>

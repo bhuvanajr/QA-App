@@ -11,6 +11,7 @@
   position: relative;
   padding-bottom: 6.25rem;
   min-height: 100%;
+  font-family: Geomanist, Helvetica, Arial, sans-serif;
 }
 
 .application-container {
@@ -70,7 +71,6 @@ footer {
   display: block;
   font-weight: 600;
   width: 100%;
-  font-family: Geomanist, Helvetica, Arial, sans-serif;
 }
 
 .subtitle {
@@ -81,7 +81,6 @@ footer {
   font-size: 1.25rem;
   margin-top: 0px;
   margin-bottom: 0.5em;
-  font-family: Geomanist, Helvetica, Arial, sans-serif;
 }
 
 .title-block {
@@ -97,7 +96,6 @@ footer {
 
 .branding {
   box-sizing: border-box;
-  width: 100px;
 }
 
 .brand-image {
