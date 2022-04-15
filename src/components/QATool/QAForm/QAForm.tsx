@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useQAOverviewContext } from '../../../context';
 import { AnswerInput } from './AnswerInput';
+import { DelayInput } from './DelayInput';
 import { QuestionInput } from './QuestionInput';
 
 export const QAForm: React.FC = () => {
@@ -10,7 +11,7 @@ export const QAForm: React.FC = () => {
     formState: { isSubmitSuccessful },
     reset,
   } = formMethods;
-  const [delay] = useState();
+
   const {
     methods: { submitNewQA },
   } = useQAOverviewContext();
@@ -31,21 +32,7 @@ export const QAForm: React.FC = () => {
         <h2>Create a new question</h2>
         <QuestionInput />
         <AnswerInput />
-
-        <div className="col-auto my-2">
-          <div className="custom-control custom-checkbox mr-sm-2">
-            <input
-              type="checkbox"
-              className="custom-control-input mx-2"
-              value={delay}
-              {...formMethods.register('delay')}
-            />
-            <label className="custom-control-label" htmlFor="customControlAutosizing">
-              Introduce 5 second delay
-            </label>
-          </div>
-        </div>
-
+        <DelayInput />
         <div className="col-auto my-1">
           <button type="submit" className="btn btn-primary btn-submit">
             Submit

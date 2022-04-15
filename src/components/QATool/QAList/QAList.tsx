@@ -5,27 +5,20 @@ import { QAGridBody } from './QAGridBody';
 
 export const QAList = () => {
   const {
-    methods: { requestSort },
-    state: { sortConfig },
+    methods: { requestSort, getSortIconClassName },
   } = useSortContext();
   const {
     state: { isQALoading },
     methods: { resetQA },
   } = useQAOverviewContext();
-
-  const getClassNamesFor = name => {
-    if (!sortConfig) {
-      return;
-    }
-    return sortConfig.key === name ? sortConfig.direction : undefined;
-  };
+  const iconClass = getSortIconClassName('question');
 
   return (
     <div className="mb-5 col-lg-10">
       <div className="d-flex align-items-center mb-6">
         <h2>Questions and Answers</h2>
         <button type="button" className="btn-icon" onClick={() => requestSort('question')}>
-          {getClassNamesFor('question') && <div className={`icon ${getClassNamesFor('question')}`} />}
+          {iconClass && <div className={`icon ${iconClass}`} />}
         </button>
         <button type="button" className="btn-icon" onClick={() => resetQA()}>
           <div className="icon icon-delete" />
