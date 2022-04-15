@@ -1,10 +1,13 @@
 import React, { createContext, useContext } from 'react';
 import { QAType } from '../../types/QAType';
-import { getSortedItems } from './methods/getSortedItems';
-import { requestSort } from './methods/requestSort';
+import { getSortedItems, requestSort, getSortIconClassName } from './methods';
 
 type SortContextType = {
-  methods: { getSortedItems: (item: QAType[]) => QAType[]; requestSort: (key) => void };
+  methods: {
+    getSortedItems: (item: QAType[]) => QAType[];
+    requestSort: (key) => void;
+    getSortIconClassName: (name) => any;
+  };
   state: { sortConfig: any };
 };
 
@@ -23,6 +26,7 @@ export const SortProvider: React.FC<Props> = props => {
         methods: {
           getSortedItems: (items: any) => getSortedItems(sortConfig, items),
           requestSort: (key: any) => requestSort(sortConfig, setSortConfig, key),
+          getSortIconClassName: name => getSortIconClassName(name, sortConfig),
         },
         state: {
           sortConfig: sortConfig,
