@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import { useQAOverviewContext } from '../../../context';
+import { getUuid } from '../../../helpers/helperFunctions';
 import { AnswerInput } from './AnswerInput';
 import { DelayInput } from './DelayInput';
 import { QuestionInput } from './QuestionInput';
@@ -17,8 +18,7 @@ export const QAForm: React.FC = () => {
   } = useQAOverviewContext();
 
   const onSubmit = (data: any) => {
-    var uuid = require('uuid');
-    var id = uuid.v4();
+    var id = getUuid();
     submitNewQA({ question: data.question, answer: data.answer, qaId: id }, data.delay);
   };
 
@@ -29,8 +29,10 @@ export const QAForm: React.FC = () => {
   return (
     <FormProvider {...formMethods}>
       <form onSubmit={formMethods.handleSubmit(onSubmit)}>
-        <div data-tooltip="Create a new question and answer here">
-          <h2>Create a new question</h2>
+        <div className="d-flex">
+          <div data-tooltip="Create a new question and answer here">
+            <h2>Create a new question</h2>
+          </div>
         </div>
         <QuestionInput />
         <AnswerInput />

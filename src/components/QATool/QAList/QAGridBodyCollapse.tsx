@@ -4,14 +4,14 @@ import { QAType } from '../../../types/QAType';
 
 type Props = {
   row: QAType;
-  index: number;
+  eventKey: string;
 };
 
-export const QAGridBodyCollapse: React.FC<Props> = ({ row, index }) => {
+export const QAGridBodyCollapse: React.FC<Props> = ({ row, eventKey }) => {
   return (
     <tr className="details text-wrap">
       <td colSpan={6} className="p-0">
-        <Accordion.Collapse eventKey={`accordionKey-${index}`}>
+        <Accordion.Collapse eventKey={eventKey}>
           <div className="px-3 py-3">
             <div className="row no-gutters">
               <div className="col-lg-11">

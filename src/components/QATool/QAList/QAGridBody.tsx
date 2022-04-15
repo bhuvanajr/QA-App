@@ -22,9 +22,9 @@ export const QAGridBody = () => {
         sortedQaList.map((row, index) => (
           <Fragment key={index}>
             <AccordionRow eventKey={`accordionKey-${index}`}>
-              <QAGridRow data={row} key={index} id={index} />
+              <QAGridRow data={row} key={index} eventKey={`accordionKey-${index}`} />
             </AccordionRow>
-            <QAGridBodyCollapse row={row} index={index} />
+            <QAGridBodyCollapse row={row} eventKey={`accordionKey-${index}`} />
           </Fragment>
         ))}
     </tbody>

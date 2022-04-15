@@ -1,27 +1,23 @@
 import React from 'react';
-import { Anchor } from 'react-bootstrap';
 import { QAType } from '../../../types/QAType';
+import { EditQA } from '../QAForm/EditQA';
 import { ContextAwareToggle } from './ContextAwareToggle';
 
 type Props = {
   data: QAType;
-  id: number;
+  eventKey: string;
 };
 
-export const QAGridRow: React.FC<Props> = ({ data, id }) => {
-  //const { register } = useFormContext();
-
+export const QAGridRow: React.FC<Props> = ({ data, eventKey }) => {
   return (
     <>
       <td className="col-lg-1">
-        <Anchor>
-          <span className="icon icon-edit"></span>
-        </Anchor>
+        <EditQA key={data.qaId} editData={data} />
       </td>
       <th scope="row" className="text-primary text-break">
         {data.question}
       </th>
-      <ContextAwareToggle eventKey={`accordionKey-${id}`} />
+      <ContextAwareToggle eventKey={eventKey} />
     </>
   );
 };

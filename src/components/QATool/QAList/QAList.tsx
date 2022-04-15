@@ -16,7 +16,9 @@ export const QAList = () => {
   return (
     <div className="mb-5 col-lg-10">
       <div className="d-flex align-items-center mb-6">
-        <h2>Questions and Answers</h2>
+        <div data-tooltip="Find all the questions here">
+          <h2>Questions and Answers</h2>
+        </div>
         <button type="button" className="btn-icon" onClick={() => requestSort('question')}>
           {iconClass && <div className={`icon ${iconClass}`} />}
         </button>
