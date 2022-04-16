@@ -1,17 +1,15 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
-import { useQAOverviewContext, useSortContext } from '../../../context';
+import { useQAOverviewContext } from '../../../context';
+import { Spinner } from '../../_shared';
 import { QAGridBody } from './QAGridBody';
+import { ResetButton } from './ResetButton';
+import { SortButton } from './SortButton';
 
 export const QAList = () => {
   const {
-    methods: { requestSort, getSortIconClassName },
-  } = useSortContext();
-  const {
     state: { isQALoading },
-    methods: { resetQA },
   } = useQAOverviewContext();
-  const iconClass = getSortIconClassName('question');
 
   return (
     <div className="mb-5 col-lg-10">
@@ -19,26 +17,13 @@ export const QAList = () => {
         <div data-tooltip="Find all the questions here">
           <h2>Questions and Answers</h2>
         </div>
-        <button type="button" className="btn-icon" onClick={() => requestSort('question')}>
-          {iconClass && <div className={`icon ${iconClass}`} />}
-        </button>
-        <button type="button" className="btn-icon" onClick={() => resetQA()}>
-          <div className="icon icon-delete" />
-        </button>
+        <SortButton />
+        <ResetButton />
       </div>
-
       <Accordion>
-        <div className="table-responsive rounded">
-          <table className="table mb-0">
-            <QAGridBody />
-          </table>
-        </div>
+        <QAGridBody />
       </Accordion>
-      {isQALoading && (
-        <div className="spinner-border spinner-border-sm" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-      )}
+      {isQALoading && <Spinner />}
     </div>
   );
 };

@@ -1,11 +1,12 @@
 import { QAType } from '../../../types/QAType';
 import { QAOverviewContextState } from '../QAOverviewProvider';
 
-export const deleteQA = async (
+export const editQA = async (
   data: QAType,
   setState: React.Dispatch<React.SetStateAction<QAOverviewContextState>>,
   state: QAOverviewContextState
 ) => {
-  const updatedList = state.questionAnswerList?.filter(qa => qa.qaId !== data.qaId);
-  setState({ ...state, questionAnswerList: updatedList });
+  let updatelist = state.questionAnswerList?.filter(qa => qa.qaId !== data.qaId);
+  updatelist?.push(data);
+  setState({ ...state, questionAnswerList: updatelist });
 };

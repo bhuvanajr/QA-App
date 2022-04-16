@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { getQnA } from './api';
 import { QAType } from '../../types/QAType';
-import { submitNewQA, resetQA, deleteQA } from './methods';
+import { submitNewQA, resetQA, deleteQA, editQA } from './methods';
 
 export type QAOverviewContextState = {
   questionAnswerList?: QAType[];
@@ -13,6 +13,7 @@ type QAOverviewContextType = {
     submitNewQA: (data: QAType, delay: boolean) => void;
     resetQA: () => void;
     deleteQA: (data: QAType) => void;
+    editQA: (data: QAType) => void;
   };
   state: QAOverviewContextState;
 };
@@ -34,6 +35,7 @@ export const QAOverviewProvider: React.FC = props => {
           submitNewQA: (data, delay) => submitNewQA(data, delay, setQAState, qaState),
           resetQA: () => resetQA(setQAState),
           deleteQA: data => deleteQA(data, setQAState, qaState),
+          editQA: data => editQA(data, setQAState, qaState),
         },
         state: qaState,
       }}
