@@ -9,6 +9,6 @@ test('should render correctly', () => {
 
 test('should render page title', () => {
   render(<App />);
-  const linkElement = screen.getByText(/Quotes Overview for you/i);
+  const linkElement = screen.getByText(/The awesome QA Tool/i);
   expect(linkElement).toBeInTheDocument();
 });

@@ -16,32 +16,58 @@ exports[`should render correctly 1`] = `
             href="/"
           >
             <img
-              alt="DEB logo"
+              alt="Brand logo"
               class="brand-image"
-              src="/assets/logo_DEB.svg"
+              src="/assets/qa_logo.png"
             />
           </a>
+          QA Tool
         </div>
       </div>
     </header>
-    <main>
+    <main
+      class="container"
+    >
       <div
         class="title-block"
       >
-        <h2
+        <h1
           class="title"
         >
-          Quotes Overview for you
-        </h2>
+          The awesome QA Tool
+        </h1>
         <h3
           class="subtitle"
         >
-          Choose and accept from the quotes below
+          Feel free to add new questions
         </h3>
       </div>
       <div
-        class="container-lg rounded mb-10 "
+        class="mb-5 col-lg-10"
       >
+        <div
+          class="d-flex align-items-center mb-6"
+        >
+          <h2>
+            Questions and Answers
+          </h2>
+          <button
+            class="btn-icon"
+            type="button"
+          >
+            <div
+              class="icon ascending"
+            />
+          </button>
+          <button
+            class="btn-icon"
+            type="button"
+          >
+            <div
+              class="icon icon-delete"
+            />
+          </button>
+        </div>
         <div
           class="accordion"
         >
@@ -51,97 +77,35 @@ exports[`should render correctly 1`] = `
             <table
               class="table mb-0"
             >
-              <thead
-                class="table-light"
-              >
-                <tr>
-                  <th
-                    scope="col"
-                  />
-                  <th
-                    scope="col"
-                  >
-                    <button
-                      class="table-sort"
-                      type="button"
-                    >
-                      <div
-                        class="d-flex"
-                      >
-                        Solution Name
-                        <div
-                          class="icon ascending"
-                        />
-                      </div>
-                    </button>
-                  </th>
-                  <th
-                    scope="col"
-                  >
-                    <button
-                      class="table-sort"
-                      type="button"
-                    >
-                      <div
-                        class="d-flex"
-                      >
-                        Date created
-                      </div>
-                    </button>
-                  </th>
-                  <th
-                    scope="col"
-                  >
-                    <button
-                      class="table-sort"
-                      type="button"
-                    >
-                      <div
-                        class="d-flex"
-                      >
-                        Expiration date
-                      </div>
-                    </button>
-                  </th>
-                  <th
-                    scope="col"
-                  >
-                    Total price
-                  </th>
-                  <th
-                    scope="col"
-                  />
-                </tr>
-              </thead>
               <tbody>
                 <tr
                   class="accordion accordion-item"
                 >
-                  <td>
-                    <input
-                      name="CV19106"
-                      type="checkbox"
-                      value="CV19106"
-                    />
+                  <td
+                    class="col-lg-1"
+                  >
+                    <a
+                      href="#"
+                      role="button"
+                      tabindex="0"
+                    >
+                      <span
+                        class="icon icon-edit"
+                      />
+                    </a>
                   </td>
                   <th
-                    class="text-primary"
+                    class="text-primary text-break"
                     scope="row"
                   >
-                    centralHeatingBoiler
+                    How to add a question
                   </th>
-                  <td>
-                    21-6-2021
-                  </td>
-                  <td>
-                    4-7-2021
-                  </td>
-                  <td>
-                    € 1.975,22
-                  </td>
-                  <td>
+                  <td
+                    class="col-lg-1"
+                  >
                     <button
                       class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
                       type="button"
                     />
                   </td>
@@ -163,613 +127,15 @@ exports[`should render correctly 1`] = `
                           class="row no-gutters"
                         >
                           <div
-                            class="col-lg-6"
+                            class="col-lg-11"
                           >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Quote Details
-                            </h3>
                             <dl
-                              class="row no-gutters text-dark mb-10"
+                              class="row no-gutters text-dark"
                             >
-                              <dt
-                                class="col-12"
-                              >
-                                Adviser Name
-                              </dt>
                               <dd
-                                class="col-12"
+                                class="col-12 text-break"
                               >
-                                Laurens van Dusschoten
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Reference code
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                CV19106
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Investment
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                € 2.390,02
-                              </dd>
-                            </dl>
-                          </div>
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Product Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Remeha Tzerra Ace CW5 CV ketel met A-label pomp
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                1645.98
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Standaard arbeid CV ketel installatie
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                0
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Remeha E-twist Rinie Frijns
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                135.45
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Vernieuwen rookgasafvoer inclusief montage
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                193.79
-                              </dd>
-                            </dl>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  class="accordion accordion-item"
-                >
-                  <td>
-                    <input
-                      name="BO19107"
-                      type="checkbox"
-                      value="BO19107"
-                    />
-                  </td>
-                  <th
-                    class="text-primary"
-                    scope="row"
-                  >
-                    crawlspaceInsulation
-                  </th>
-                  <td>
-                    29-8-2021
-                  </td>
-                  <td>
-                    13-9-2021
-                  </td>
-                  <td>
-                    € 151,41
-                  </td>
-                  <td>
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                    />
-                  </td>
-                </tr>
-                <tr
-                  class="details text-wrap"
-                >
-                  <td
-                    class="p-0"
-                    colspan="6"
-                  >
-                    <div
-                      class="accordion-collapse collapse"
-                    >
-                      <div
-                        class="px-3 py-3"
-                      >
-                        <div
-                          class="row no-gutters"
-                        >
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Quote Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Adviser Name
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                Laurens van Dusschoten
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Reference code
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                BO19107
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Investment
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                € 1.620,91
-                              </dd>
-                            </dl>
-                          </div>
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Product Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Bodemisolatie met 20-25cm isolatieparels
-                                -
-                                38
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                6.24
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Aanbrengen bodemisolatie met 20-25cm isolatieparels
-                                -
-                                38
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                24.94
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Toeslag SKG IKOB certificering
-                                -
-                                38
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                0.23
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Toegang tot kruipruimte creëren 
-                                -
-                                2
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                120
-                              </dd>
-                            </dl>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  class="accordion accordion-item"
-                >
-                  <td>
-                    <input
-                      name="PV19103"
-                      type="checkbox"
-                      value="PV19103"
-                    />
-                  </td>
-                  <th
-                    class="text-primary"
-                    scope="row"
-                  >
-                    solarPanels
-                  </th>
-                  <td>
-                    21-6-2021
-                  </td>
-                  <td>
-                    4-7-2021
-                  </td>
-                  <td>
-                    € 2.507,51
-                  </td>
-                  <td>
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                    />
-                  </td>
-                </tr>
-                <tr
-                  class="details text-wrap"
-                >
-                  <td
-                    class="p-0"
-                    colspan="6"
-                  >
-                    <div
-                      class="accordion-collapse collapse"
-                    >
-                      <div
-                        class="px-3 py-3"
-                      >
-                        <div
-                          class="row no-gutters"
-                        >
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Quote Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Adviser Name
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                Laurens van Dusschoten
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Reference code
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                PV19103
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Investment
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                € 5.347,38
-                              </dd>
-                            </dl>
-                          </div>
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Product Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Trina Solar - Vertex Mono 390 All Black 1/3 Cut PERC
-                                -
-                                12
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                145.2
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                SolarEdge SE3500H
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                948.09
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                SolarEdge P505
-                                -
-                                12
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                70.07
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Montagemateriaal schuin dak
-                                -
-                                12
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                42.9
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Installatiekosten voor 12 panelen
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                1251.25
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                BTW teruggave service
-                                -
-                                1
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                50
-                              </dd>
-                            </dl>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                </tr>
-                <tr
-                  class="accordion accordion-item"
-                >
-                  <td>
-                    <input
-                      name="SP19104"
-                      type="checkbox"
-                      value="SP19104"
-                    />
-                  </td>
-                  <th
-                    class="text-primary"
-                    scope="row"
-                  >
-                    wallInsulation
-                  </th>
-                  <td>
-                    21-6-2021
-                  </td>
-                  <td>
-                    4-7-2021
-                  </td>
-                  <td>
-                    € 60,23
-                  </td>
-                  <td>
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                    />
-                  </td>
-                </tr>
-                <tr
-                  class="details text-wrap"
-                >
-                  <td
-                    class="p-0"
-                    colspan="6"
-                  >
-                    <div
-                      class="accordion-collapse collapse"
-                    >
-                      <div
-                        class="px-3 py-3"
-                      >
-                        <div
-                          class="row no-gutters"
-                        >
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Quote Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Adviser Name
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                Laurens van Dusschoten
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Reference code
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                SP19104
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Investment
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                € 2.214,96
-                              </dd>
-                            </dl>
-                          </div>
-                          <div
-                            class="col-lg-6"
-                          >
-                            <h3
-                              class="h4 mb-4"
-                            >
-                              Product Details
-                            </h3>
-                            <dl
-                              class="row no-gutters text-dark mb-10"
-                            >
-                              <dt
-                                class="col-12"
-                              >
-                                Spouwmuurisolatie met 6cm HR++ isolatieparels
-                                -
-                                89
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                3.68
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Aanbrengen spouwmuurisolatie met 6cm HR++ isolatieparels
-                                -
-                                89
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                14.72
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Herstel van de snijvoeg
-                                -
-                                89
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                1.6
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Toeslag Insula certificering
-                                -
-                                89
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                0.23
-                              </dd>
-                              <dt
-                                class="col-12"
-                              >
-                                Plaatsen van kunststof ventilatierooster
-                                -
-                                4
-                              </dt>
-                              <dd
-                                class="col-12"
-                              >
-                                40
+                                Just use the form below
                               </dd>
                             </dl>
                           </div>
@@ -782,25 +148,84 @@ exports[`should render correctly 1`] = `
             </table>
           </div>
         </div>
+      </div>
+      <form>
+        <h2>
+          Create a new question
+        </h2>
         <div
-          class="rounded-bottom border-top px-6 py-4"
+          class="form-group row"
         >
-          <div
-            class="row no-gutters ps-4"
+          <label
+            class="col-lg-8 col-form-label"
+            for="question"
           >
-            <button
-              class="btn"
-              type="button"
-            >
-              <span
-                class="btn-inner--text"
-              >
-                Accept Quotes
-              </span>
-            </button>
+            Question
+          </label>
+          <div
+            class="col-lg-8"
+          >
+            <input
+              autocomplete="off"
+              class="form-control"
+              name="question"
+              placeholder="Enter your question here"
+              rules="[object Object]"
+            />
           </div>
         </div>
-      </div>
+        <div
+          class="form-group row"
+        >
+          <label
+            class="col-lg-8 col-form-label"
+            for="question"
+          >
+            Answer
+          </label>
+          <div
+            class="col-lg-8"
+          >
+            <input
+              autocomplete="off"
+              class="form-control"
+              name="answer"
+              placeholder="Enter your answer here"
+              rules="[object Object]"
+            />
+          </div>
+        </div>
+        <div
+          class="col-auto my-2"
+        >
+          <div
+            class="custom-control custom-checkbox mr-sm-2"
+          >
+            <input
+              class="custom-control-input mx-2"
+              name="delay"
+              type="checkbox"
+              value=""
+            />
+            <label
+              class="custom-control-label"
+              for="customControlAutosizing"
+            >
+              Introduce 5 second delay
+            </label>
+          </div>
+        </div>
+        <div
+          class="col-auto my-1"
+        >
+          <button
+            class="btn btn-primary btn-submit"
+            type="submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
     </main>
     <footer>
       <div
@@ -844,14 +269,14 @@ exports[`should render correctly 1`] = `
               >
                 <a
                   class="nav-link"
-                  href="https://www.energiebespaarders.nl/"
+                  href="#"
                   rel="noreferrer"
                   target="_blank"
                 >
                   <div
                     data-label="footer.copyright"
                   >
-                    © DEB
+                    © QA Tool
                   </div>
                 </a>
               </li>
