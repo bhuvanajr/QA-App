@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSortContext } from '../../../context';
+import { useSortContext } from 'context';
 
 export const SortButton: React.FC = () => {
   const {

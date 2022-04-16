@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { FormProvider, useForm } from 'react-hook-form';
-import { QAType } from '../../../types/QAType';
+import { QAType } from 'types/QAType';
 import { AnswerInput } from './AnswerInput';
 import { QuestionInput } from './QuestionInput';
 

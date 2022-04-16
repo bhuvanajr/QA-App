@@ -1,4 +1,4 @@
-import { QAType } from '../../../types/QAType';
+import { QAType } from 'types/QAType';
 import { QAOverviewContextState } from '../QAOverviewProvider';
 
 export const deleteQA = async (

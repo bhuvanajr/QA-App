@@ -1,7 +1,7 @@
-import React, { Fragment, useMemo } from 'react';
-import { useQAOverviewContext, useSortContext } from '../../../context';
-import { QAType } from '../../../types/QAType';
-import { AccordionRow } from '../../_shared';
+import React, { Fragment } from 'react';
+import { useQAOverviewContext, useSortContext } from 'context';
+import { QAType } from 'types/QAType';
+import { AccordionRow } from 'components/_shared';
 import { QAGridBodyCollapse } from './QAGridBodyCollapse';
 import { QAGridRow } from './QAGridRow';
 

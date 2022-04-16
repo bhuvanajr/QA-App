@@ -1,7 +1,7 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
-import { useQAOverviewContext } from '../../../context';
-import { Spinner } from '../../_shared';
+import { useQAOverviewContext } from 'context';
+import { Spinner } from 'components/_shared';
 import { QAGridBody } from './QAGridBody';
 import { ResetButton } from './ResetButton';
 import { SortButton } from './SortButton';

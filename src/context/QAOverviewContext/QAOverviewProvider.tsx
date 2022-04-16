@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { getQnA } from './api';
-import { QAType } from '../../types/QAType';
+import { QAType } from 'types/QAType';
 import { submitNewQA, resetQA, deleteQA, editQA } from './methods';
 
 export type QAOverviewContextState = {

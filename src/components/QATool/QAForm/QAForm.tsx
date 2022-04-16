@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
-import { useQAOverviewContext } from '../../../context';
-import { getUuid } from '../../../helpers/helperFunctions';
+import { useQAOverviewContext } from 'context';
+import { getUuid } from 'helpers/helperFunctions';
 import { AnswerInput } from './AnswerInput';
 import { DelayInput } from './DelayInput';
 import { QuestionInput } from './QuestionInput';
