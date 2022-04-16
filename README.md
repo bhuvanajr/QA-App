@@ -6,6 +6,7 @@ Currently the user can:
 - add a new question and answer
 - delete the complete list 
 - sort the list
+- edit or delete the individual QA
 
 How-to:
 Install with npm install
