@@ -48,9 +48,13 @@ exports[`should render correctly 1`] = `
         <div
           class="d-flex align-items-center mb-6"
         >
-          <h2>
-            Questions and Answers
-          </h2>
+          <div
+            data-tooltip="Find all the questions here"
+          >
+            <h2>
+              Questions and Answers
+            </h2>
+          </div>
           <button
             class="btn-icon"
             type="button"
@@ -75,7 +79,7 @@ exports[`should render correctly 1`] = `
             class="table-responsive rounded"
           >
             <table
-              class="table mb-0"
+              class="table mb-2"
             >
               <tbody>
                 <tr
@@ -84,15 +88,14 @@ exports[`should render correctly 1`] = `
                   <td
                     class="col-lg-1"
                   >
-                    <a
-                      href="#"
-                      role="button"
-                      tabindex="0"
+                    <button
+                      class="btn-icon"
+                      type="button"
                     >
-                      <span
+                      <div
                         class="icon icon-edit"
                       />
-                    </a>
+                    </button>
                   </td>
                   <th
                     class="text-primary text-break"
@@ -150,9 +153,17 @@ exports[`should render correctly 1`] = `
         </div>
       </div>
       <form>
-        <h2>
-          Create a new question
-        </h2>
+        <div
+          class="d-flex"
+        >
+          <div
+            data-tooltip="Create a new question and answer here"
+          >
+            <h2>
+              Create a new question
+            </h2>
+          </div>
+        </div>
         <div
           class="form-group row"
         >
@@ -171,6 +182,7 @@ exports[`should render correctly 1`] = `
               name="question"
               placeholder="Enter your question here"
               rules="[object Object]"
+              value=""
             />
           </div>
         </div>
@@ -192,6 +204,7 @@ exports[`should render correctly 1`] = `
               name="answer"
               placeholder="Enter your answer here"
               rules="[object Object]"
+              value=""
             />
           </div>
         </div>
