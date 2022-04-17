@@ -9,6 +9,6 @@ Currently the user can:
 - edit or delete the individual QA
 
 How-to:
-Install with npm install
-Run the application with npm start
-Test the application with npm test 
+- Install with npm install
+- Run the application with npm start
+- Test the application with npm test 
