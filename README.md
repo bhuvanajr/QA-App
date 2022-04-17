@@ -1,5 +1,5 @@
 # QA-App
-An app to view, add, edit and delete question and answers
+An application to view, add, edit and delete question and answers
 
 Currently the user can:
 - view the question and answer list
@@ -11,3 +11,4 @@ Currently the user can:
 How-to:
 Install with npm install
 Run the application with npm start
+Test the application with npm test 
