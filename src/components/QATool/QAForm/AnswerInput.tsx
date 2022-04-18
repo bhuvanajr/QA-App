@@ -1,6 +1,6 @@
 import React from 'react';
-import { QAType } from '../../../types/QAType';
-import { TextInput } from '../../_shared';
+import { QAType } from 'types/QAType';
+import { TextInput } from 'components/_shared';
 
 type Props = {
   defaultQA?: QAType;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Accordion } from 'react-bootstrap';
-import { QAType } from '../../../types/QAType';
+import { QAType } from 'types/QAType';
 
 type Props = {
   row: QAType;

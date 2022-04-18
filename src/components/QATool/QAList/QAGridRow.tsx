@@ -1,6 +1,6 @@
 import React from 'react';
-import { useQAOverviewContext } from '../../../context';
-import { QAType } from '../../../types/QAType';
+import { useQAOverviewContext } from 'context';
+import { QAType } from 'types/QAType';
 import { EditQA } from '../QAForm/EditQA';
 import { ContextAwareToggle } from './ContextAwareToggle';
 

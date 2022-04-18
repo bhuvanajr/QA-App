@@ -1,6 +1,5 @@
 import React from 'react';
-import { SortProvider } from '../../context';
-import { QAOverviewProvider } from '../../context/QAOverviewContext/QAOverviewProvider';
+import { QAOverviewProvider, SortProvider } from 'context';
 import { QAForm } from './QAForm';
 import { QAList } from './QAList';
 

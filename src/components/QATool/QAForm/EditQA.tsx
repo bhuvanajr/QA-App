@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'react-bootstrap';
 import { FormProvider, useForm } from 'react-hook-form';
-import { QAType } from '../../../types/QAType';
+import { QAType } from 'types/QAType';
 import { AnswerInput } from './AnswerInput';
 import { QuestionInput } from './QuestionInput';
 
@@ -10,7 +10,7 @@ type Props = {
   deleteFn: (data) => void;
   editFn: (data) => void;
 };
-
+//Todo:separate Modal make it reusable
 export const EditQA: React.FC<Props> = ({ editData, editFn, deleteFn }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

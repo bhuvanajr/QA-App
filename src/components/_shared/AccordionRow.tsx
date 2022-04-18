@@ -7,6 +7,7 @@ type Props = {
 
 export const AccordionRow: React.FC<Props> = props => {
   const handleClick = useAccordionButton(props.eventKey);
+
   return (
     <Accordion.Item
       className="accordion"

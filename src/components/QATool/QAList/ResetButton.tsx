@@ -1,5 +1,5 @@
 import React from 'react';
-import { useQAOverviewContext } from '../../../context';
+import { useQAOverviewContext } from 'context';
 
 export const ResetButton: React.FC = () => {
   const {
