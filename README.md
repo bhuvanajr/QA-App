@@ -18,7 +18,7 @@ Aim:
 - My aim is to develop a reusable, readable and maintainable code.
 - Framework: React + Typescript(typing always helps to catch the bugs at an earlier stage) + React Bootstrap
 - State management: React.useContext 
-- Testing :Jest(snapshots and userEvents)
+- Testing :Jest(for snapshots, userEvents, context methods, helpers)
 - Linting:ESLint
 - Code Formatter:Prettier
 - Styling:CSS + bootstrap +custom CSS
