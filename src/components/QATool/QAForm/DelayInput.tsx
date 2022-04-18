@@ -9,7 +9,7 @@ export const DelayInput = () => {
     <div className="col-auto my-2">
       <div className="custom-control custom-checkbox mr-sm-2">
         <input type="checkbox" className="custom-control-input mx-2" value={delay} {...register('delay')} />
-        <label className="custom-control-label" htmlFor="customControlAutosizing">
+        <label className="custom-control-label" htmlFor="delay">
           Introduce 5 second delay
         </label>
       </div>

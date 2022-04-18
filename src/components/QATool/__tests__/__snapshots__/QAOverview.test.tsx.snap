@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render QAOverview correctly 1`] = `
+<div>
+  <div
+    class="title-block"
+  >
+    <h1
+      class="title"
+    >
+      The awesome QA Tool
+    </h1>
+    <h3
+      class="subtitle"
+    >
+      Feel free to add new questions
+    </h3>
+  </div>
+  <div
+    class="mb-5 col-lg-10"
+  >
+    <div
+      class="d-flex align-items-center mb-6"
+    >
+      <div
+        data-tooltip="Find all the questions here"
+      >
+        <h2>
+          Questions and Answers
+        </h2>
+      </div>
+      <button
+        class="btn-icon"
+        type="button"
+      >
+        <div
+          class="icon ascending"
+        />
+      </button>
+      <button
+        class="btn-icon"
+        type="button"
+      >
+        <div
+          class="icon icon-delete"
+        />
+      </button>
+    </div>
+    <div
+      class="accordion"
+    >
+      <div
+        class="table-responsive rounded"
+      >
+        <table
+          class="table mb-2"
+        >
+          <tbody>
+            <tr
+              class="accordion accordion-item"
+            >
+              <td
+                class="col-lg-1"
+              >
+                <button
+                  class="btn-icon"
+                  type="button"
+                >
+                  <div
+                    class="icon icon-edit"
+                  />
+                </button>
+              </td>
+              <th
+                class="text-primary text-break"
+                scope="row"
+              >
+                How to add a question
+              </th>
+              <td
+                class="col-lg-1"
+              >
+                <button
+                  class="accordion-button collapsed"
+                  data-bs-toggle="collapse"
+                  type="button"
+                />
+              </td>
+            </tr>
+            <tr
+              class="details text-wrap"
+            >
+              <td
+                class="p-0"
+                colspan="6"
+              >
+                <div
+                  class="accordion-collapse collapse"
+                >
+                  <div
+                    class="px-3 py-3"
+                  >
+                    <div
+                      class="row no-gutters"
+                    >
+                      <div
+                        class="col-lg-11"
+                      >
+                        <dl
+                          class="row no-gutters text-dark"
+                        >
+                          <dd
+                            class="col-12 text-break"
+                          >
+                            Just use the form below
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <form>
+    <div
+      class="d-flex"
+    >
+      <div
+        data-tooltip="Create a new question and answer here"
+      >
+        <h2>
+          Create a new question
+        </h2>
+      </div>
+    </div>
+    <div
+      class="form-group row"
+    >
+      <label
+        class="col-lg-8 col-form-label"
+        for="question"
+      >
+        Question
+      </label>
+      <div
+        class="col-lg-8"
+      >
+        <input
+          autocomplete="off"
+          class="form-control"
+          name="question"
+          placeholder="Enter your question here"
+          rules="[object Object]"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="form-group row"
+    >
+      <label
+        class="col-lg-8 col-form-label"
+        for="question"
+      >
+        Answer
+      </label>
+      <div
+        class="col-lg-8"
+      >
+        <input
+          autocomplete="off"
+          class="form-control"
+          name="answer"
+          placeholder="Enter your answer here"
+          rules="[object Object]"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="col-auto my-2"
+    >
+      <div
+        class="custom-control custom-checkbox mr-sm-2"
+      >
+        <input
+          class="custom-control-input mx-2"
+          name="delay"
+          type="checkbox"
+          value=""
+        />
+        <label
+          class="custom-control-label"
+          for="delay"
+        >
+          Introduce 5 second delay
+        </label>
+      </div>
+    </div>
+    <div
+      class="col-auto my-1"
+    >
+      <button
+        class="btn btn-primary btn-submit"
+        type="submit"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+`;

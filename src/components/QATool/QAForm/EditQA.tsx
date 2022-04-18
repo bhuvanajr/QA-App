@@ -10,7 +10,7 @@ type Props = {
   deleteFn: (data) => void;
   editFn: (data) => void;
 };
-
+//Todo:separate Modal make it reusable
 export const EditQA: React.FC<Props> = ({ editData, editFn, deleteFn }) => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);

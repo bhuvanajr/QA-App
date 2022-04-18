@@ -11,6 +11,7 @@ export const QAForm: React.FC = () => {
   const {
     formState: { isSubmitSuccessful },
     reset,
+    handleSubmit,
   } = formMethods;
 
   const {
@@ -23,12 +24,12 @@ export const QAForm: React.FC = () => {
   };
 
   useEffect(() => {
-    reset();
+    if (isSubmitSuccessful) reset();
   }, [isSubmitSuccessful]);
 
   return (
     <FormProvider {...formMethods}>
-      <form onSubmit={formMethods.handleSubmit(onSubmit)}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className="d-flex">
           <div data-tooltip="Create a new question and answer here">
             <h2>Create a new question</h2>
