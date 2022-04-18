@@ -7,8 +7,10 @@ export const ResetButton: React.FC = () => {
   } = useQAOverviewContext();
 
   return (
-    <button type="button" className="btn-icon" onClick={() => resetQA()}>
-      <div className="icon icon-delete" />
-    </button>
+    <div data-tooltip="Delete all the questions and answers">
+      <button type="button" className="btn-icon" onClick={() => resetQA()}>
+        <div className="icon icon-delete" />
+      </button>
+    </div>
   );
 };
