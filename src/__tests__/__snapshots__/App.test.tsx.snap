@@ -11,7 +11,7 @@ exports[`should render correctly 1`] = `
       </div>
     </header>
     <main
-      class="container"
+      class="container mx-auto"
     >
       <div>
         QAOverview

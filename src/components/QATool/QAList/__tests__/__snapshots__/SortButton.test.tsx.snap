@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render sort button in ascending correctly 1`] = `
+<div>
+  <div
+    data-tooltip="Sort by question"
+  >
+    <button
+      class="btn-icon"
+      type="button"
+    >
+      <div
+        class="icon ascending"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`should render sort button in descending correctly 1`] = `
+<div>
+  <div
+    data-tooltip="Sort by question"
+  >
+    <button
+      class="btn-icon"
+      type="button"
+    >
+      <div
+        class="icon descending"
+      />
+    </button>
+  </div>
+</div>
+`;
